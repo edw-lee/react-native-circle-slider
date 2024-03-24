@@ -1,4 +1,4 @@
-# @edwinlee/react-native-circle-slider
+# @edw-lee/react-native-circle-slider
 
 A react native circle slider
 
