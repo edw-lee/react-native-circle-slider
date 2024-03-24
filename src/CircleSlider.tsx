@@ -35,6 +35,7 @@ export default function CircleSlider({
   onLayout,
   ...props
 }: CircleSliderProps & ViewProps) {
+  sliderAngle = Math.max(0, Math.min(sliderAngle, maxAngle));
   sliderAngle = toPositiveRad(degToRad(sliderAngle));
   offsetAngle = toPositiveRad(degToRad(offsetAngle));
   maxAngle = toPositiveRad(degToRad(maxAngle));

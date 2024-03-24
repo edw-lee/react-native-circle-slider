@@ -1,7 +1,15 @@
 import * as React from 'react';
 
-import { Dimensions, LayoutChangeEvent, StyleSheet, View } from 'react-native';
-import { CircleSlider } from '@edwinlee/react-native-circle-slider';
+import {
+  Button,
+  Dimensions,
+  LayoutChangeEvent,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import { CircleSlider } from '@edw-lee/react-native-circle-slider';
 import { degToRad, radToDeg } from '../../src/util';
 
 const OFFSET_ANGLE = -45;
@@ -42,6 +50,29 @@ export default function App() {
         sliderAngle={sliderAngle}
         onUpdate={onUpdateHandler}
       />
+
+      <View
+        style={{
+          width: '100%',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-around',
+        }}
+      >
+        <TouchableOpacity
+          onPress={() => setSliderAngle(Math.max(sliderAngle - 1, 0))}
+        >
+          <Text style={{ fontSize: 40 }}>-</Text>
+        </TouchableOpacity>
+
+        <Text style={{ fontSize: 40 }}>{Math.round(sliderAngle)}</Text>
+
+        <TouchableOpacity
+          onPress={() => setSliderAngle(Math.min(sliderAngle + 1, 270))}
+        >
+          <Text style={{ fontSize: 40 }}>+</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }

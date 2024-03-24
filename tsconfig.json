@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@edwinlee/react-native-circle-slider": ["./src/index"]
+      "@edw-lee/react-native-circle-slider": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
