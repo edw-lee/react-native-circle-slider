@@ -17,5 +17,9 @@ export function toPositiveRad(rad: number) {
 }
 
 export function clampTo360Rad(rad: number) {
+  if (rad <= 2 * Math.PI) {
+    return rad;
+  }
+
   return rad % (2 * Math.PI);
 }

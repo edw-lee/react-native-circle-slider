@@ -25,8 +25,8 @@ const MAX_DELTA_ANGLE = degToRad(60);
 
 export default function CircleSlider({
   sliderAngle = 0,
-  offsetAngle = 315,
-  maxAngle = 270,
+  offsetAngle = 0,
+  maxAngle = 360,
   segments = 6,
   size = 50,
   color = '#ff9933',
