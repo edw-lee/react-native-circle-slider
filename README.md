@@ -7,11 +7,18 @@ A react native circle slider
 ```sh
 npm install @edwinlee/react-native-circle-slider
 ```
+## Preview
+
+<img src="screenshots/preview.png" width='250'/>
 
 ## Usage
 
 ```js
 import { CircleSlider } from '@edwinlee/react-native-circle-slider';
+
+const OFFSET_ANGLE = -45;
+const MAX_ANGLE = 270;
+const SLIDER_SIZE = 80;
 
 // ...
  const [sliderAngle, setSliderAngle] = React.useState(0);
@@ -22,25 +29,18 @@ import { CircleSlider } from '@edwinlee/react-native-circle-slider';
  };
 
  const onLayoutHandler = (e: LayoutChangeEvent) => {
-    const { width, height } = e.nativeEvent.layout;
-
-    const sliderRadius = SLIDER_SIZE / 2;
-    const halfWidth = width / 2;
-    const newHeight = Math.abs(
-      Math.sin(degToRad(MAX_ANGLE + OFFSET_ANGLE)) * (halfWidth - sliderRadius)
-    );
-    setHeight(halfWidth + newHeight + sliderRadius);
+   // ...
  };
 
-
 <CircleSlider
-  offsetAngle={-45}
-  maxAngle={270}
-  onLayout={onLayoutHandler}
-  size={80}
   sliderAngle={sliderAngle}
+  offsetAngle={OFFSET_ANGLE}
+  maxAngle={MAX_ANGLE}
+  size={SLIDER_SIZE}
+  onLayout={onLayoutHandler}
   onUpdate={onUpdateHandler}
-/>;
+  style={/*...*/}
+/>
 ```
 
 ## Contributing
