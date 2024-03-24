@@ -41,9 +41,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edw-lee/react-native-circle-slider.git"
+    "url": "https://github.com/edw-lee/react-native-circle-slider.git"
   },
-  "author": "Edwin Lee <edwinlee107@hotmail.my> (https://github.com/edw-lee)",
+  "author": "Edwin Lee (https://github.com/edw-lee)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/edw-lee/react-native-circle-slider/issues"
