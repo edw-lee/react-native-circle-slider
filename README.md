@@ -5,7 +5,7 @@ A react native circle slider
 ## Installation
 
 ```sh
-npm install @edwinlee/react-native-circle-slider
+npm install @edw-lee/react-native-circle-slider
 ```
 ## Preview
 
@@ -14,7 +14,7 @@ npm install @edwinlee/react-native-circle-slider
 ## Usage
 
 ```js
-import { CircleSlider } from '@edwinlee/react-native-circle-slider';
+import { CircleSlider } from '@edw-lee/react-native-circle-slider';
 
 const OFFSET_ANGLE = -45;
 const MAX_ANGLE = 270;

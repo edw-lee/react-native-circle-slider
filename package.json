@@ -1,5 +1,5 @@
 {
-  "name": "@edwinlee/react-native-circle-slider",
+  "name": "@edw-lee/react-native-circle-slider",
   "version": "0.1.0",
   "description": "A react native circle slider",
   "main": "lib/commonjs/index",
@@ -49,9 +49,6 @@
     "url": "https://github.com/edw-lee/react-native-circle-slider/issues"
   },
   "homepage": "https://github.com/edw-lee/react-native-circle-slider#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
@@ -160,5 +157,10 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "@edw-lee/react-native-circle-slider": "^0.1.0",
+    "install": "^0.13.0",
+    "npm": "^10.5.0"
   }
 }
